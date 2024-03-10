@@ -1,13 +1,15 @@
 import React from 'react';
-import "./App.css";
+import Header from './componentes/header';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>BerniShop</h1>
-      <p>Venta de una gran variedad de productos para el clima de tu preferencia.</p>
+    <div className="App">
+      <Header />
+      {/* Resto del contenido de la aplicación */}
     </div>
   );
 }
 
 export default App;
+
