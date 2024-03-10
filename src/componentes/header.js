@@ -10,7 +10,7 @@ const header = () => {
           <Link to="/">BerniShop</Link>
         </h1>
         <Link to="/cart" className="header-cart">
-          <i className="fas fa-shopping-cart"></i> Carrito
+          <i className="fas fa-shopping-cart"></i> Cart
         </Link>
       </div>
     </header>
