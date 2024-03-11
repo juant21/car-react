@@ -35,5 +35,66 @@ body {
   .footer a:hover {
     color: #ccc;
   }
+  /*itemList*/
+  .item-list {
+    display: grid; /* Cambiamos a 'grid' para un diseño más flexible */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define el ancho de las columnas */
+    grid-gap: 10px; /* Agrega espacio entre los items */
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .item-list .item {
+    /* Estilos para cada item individual */
+    border: 1px solid #ddd; /* Borde gris claro */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 5px; /* Redondea las esquinas */
+    overflow: hidden; /* Controla el tamaño de las imágenes */
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .item-list .item:hover {
+    /* Efecto al pasar el mouse sobre un item */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+    transform: scale(1.05); /* Aumenta un poco el tamaño del item */
+  }
+  
+  .item-list .item img {
+    /* Estilos para las imágenes dentro de los items */
+    width: 100%; /* Ancho del 100% para que ocupen todo el espacio disponible */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  }
+  
+  .item-list .item h3 {
+    /* Estilos para el título del producto */
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .item-list .item p {
+    /* Estilos para la descripción del producto */
+    margin: 5px 0;
+    font-size: 0.8em;
+  }
+  
+  .item-list .item button {
+    /* Estilos para el botón */
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .item-list .item button:hover {
+    /* Efecto al pasar el mouse sobre el botón */
+    background-color: #ccc;
+    color: #333;
+  }
   
   
