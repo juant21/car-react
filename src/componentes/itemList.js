@@ -1,35 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Item } from "./Item"; 
+import React from 'react';
+import Item from './Item';
 
-const obtenerProductos = async () => {
-  const respuesta = await fetch("./data/productos.json");
-  const datos = await respuesta.json();
-  return datos;
-};
-
-export const ItemList = () => {
-  const [productos, setProductos] = useState([]);
-
-  useEffect(() => {
-    const obtenerDatos = async () => {
-      const productosObtenidos = await obtenerProductos();
-      setProductos(productosObtenidos);
-    };
-
-    obtenerDatos();
-  }, []);
-
+const ItemList = ({ listaProductos }) => {
   return (
     <div className="item-list">
-      {productos.map((producto) => (
-        <Item
-          key={producto.id} 
-          name={producto.name}
-          price={producto.price}
-          id={producto.id}
-          imgUrl={producto.imgUrl}
-        />
+      {listaProductos.map((producto) => (
+        <Item key={producto.id} producto={producto} />
       ))}
     </div>
   );
 };
+
+export default ItemList;
+
+

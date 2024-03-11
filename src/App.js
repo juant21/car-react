@@ -1,24 +1,25 @@
+//juan esteban tuiran tobias
 import React from 'react';
-import { ItemList } from './componentes/itemList';
+import ReactDOM from 'react-dom';
 
 import Header from './componentes/header';
 import Footer from './componentes/footer';
-import './App.css';
 
-import {ShoppingCartProvider } from './context/carShoppingContext';
+import productos from './componentes/productos';
+
+import ItemList from './componentes/itemList';
+
+import './App.css';
 
 function App() {
   return (
-    <ShoppingCartProvider>
     <div className="App">
       <Header />
       <h1>Productos:</h1>
-        <ItemList />  
+      <ItemList listaProductos={productos} />
       <Footer />
     </div>
-    </ShoppingCartProvider>
   );
 }
 
 export default App;
-
