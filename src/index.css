@@ -98,4 +98,64 @@ body {
   }
    /*carro*/
 
-    
+    /**/
+/* Overall container */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search section */
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.row input {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Clima card */
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* City name */
+.city-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Temperature */
+.temp {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Weather icon */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* Card footer */
+.card-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Max/Min temperature */
+.temp-max-min {
+  font-size: 1.2em;
+}

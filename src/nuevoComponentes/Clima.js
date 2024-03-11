@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Icons from './icons';
 
 function Clima() {
-    const [search, setSearch] = useState('roma')
+    const [search, setSearch] = useState('Colombia')
     const [values, setValues] = useState('')
     const [icon, setIcon] = useState('')
 
