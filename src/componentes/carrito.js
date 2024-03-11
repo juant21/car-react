@@ -46,4 +46,3 @@ function Carrito() {
 }
 
 export default Carrito;
-export function agregarAlCarrito;
